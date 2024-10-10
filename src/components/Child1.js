@@ -6,7 +6,7 @@ class Child1 extends Component {
     this.state = {};
   }
   componentDidMount(){
-    console.log("Component has been mounted")
+    console.log(this.props.data1);
   }
   render() {
     return <svg className="child1_svg"></svg>;
