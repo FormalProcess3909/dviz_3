@@ -13,7 +13,13 @@ class App extends Component {
   componentDidMount(){
     var self=this
     console.log("Component has been mounted")
-    d3.csv(tips).then(function(csv_data){
+    d3.csv(tips,function(d){
+      return {
+        tip:parseFloat(d.tip),
+        total_bill:parseFloat(d.total_bill),
+        day:d.day,
+      }
+    }).then(function(csv_data){
       self.setState({data:csv_data})
       //console.log(csv_data)
     })

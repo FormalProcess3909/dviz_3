@@ -8,6 +8,10 @@ class Child1 extends Component {
   componentDidMount(){
     console.log(this.props.data1);
   }
+  componentDidUpdate(){
+    // total_bill vs tip
+    console.log("ComponentDidUpdate", this.props.data1);
+  }
   render() {
     return <svg className="child1_svg"></svg>;
   }
