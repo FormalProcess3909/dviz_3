@@ -54,7 +54,7 @@ class Child2 extends Component {
     const x_scale = d3
       .scaleBand()
       .domain(rolledData.map(d => d[0]))
-      .range([0, w])
+      .range([margin.left, w])
       .padding(0.2);
 
     // Add X axis
@@ -65,17 +65,35 @@ class Child2 extends Component {
       .call(d3.axisBottom(x_scale));
 
     // Add X-axis label
+    d3.select(".child2_svg")
+    .selectAll(".my_title")
+    .data([0]).join('text')
+    .attr("class",".my_title")
+    .attr('x', w / 2 + 29)
+    .attr('y', h+ margin.top + 40)
+    .text("Day")
 
     // Y scale
     const y_scale = d3
       .scaleLinear()
       .domain([0, d3.max(rolledData, d => d[1])])
-      .range([h, 0 + 30])
+      .range([h, 0 + 40])
 
     // Y-axis
     container
       .append("g")
+      .attr("transform", `translate(${margin.left},0)`)
       .call(d3.axisLeft(y_scale))
+
+    // Y-axis label
+    d3.select(".child2_svg")
+    .append("text")
+    .attr("class", "y_label")
+    .attr("x", -(h / 2) - 47)
+    .attr("y", margin.left)
+    .attr("transform", "rotate(-90)")
+    .style("font-size", "20px")
+    .text("Average Tip")
 
     container
     .selectAll("mybar")
