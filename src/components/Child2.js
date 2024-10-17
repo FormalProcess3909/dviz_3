@@ -69,7 +69,7 @@ class Child2 extends Component {
     .selectAll(".my_title")
     .data([0]).join('text')
     .attr("class",".my_title")
-    .attr('x', w / 2 + 29)
+    .attr('x', (w + margin.left + margin.right) / 2)
     .attr('y', h+ margin.top + 40)
     .text("Day")
 
