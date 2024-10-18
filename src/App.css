@@ -7,11 +7,15 @@
 .child1{
   border: 1px solid rgb(212,212,212);
   padding: 5px;
-  height: 300px;
+  height: 400px;
+  width: 525px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Light shadow for a subtle 3D effect */
 }
 
 .child2{
   border: 1px solid rgb(212,212,212);
   padding: 5px;
-  height: 300px;
+  height: 400px;
+  width: 525px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Light shadow for a subtle 3D effect */
 }
