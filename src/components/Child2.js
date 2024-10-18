@@ -89,10 +89,10 @@ class Child2 extends Component {
     d3.select(".child2_svg")
     .append("text")
     .attr("class", "y_label")
-    .attr("x", -(h / 2) - 47)
-    .attr("y", margin.left)
+    .attr("x", -(h / 2) - 40)
+    .attr("y", margin.left - 5)
     .attr("transform", "rotate(-90)")
-    .style("font-size", "20px")
+    .style("font-size", "19px")
     .text("Average Tip")
 
     container

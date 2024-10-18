@@ -47,7 +47,6 @@ class Child1 extends Component {
       .attr("y", margin.top + 10) // Position the title relative to the top margin
       .attr("text-anchor", "middle") // Center the text
       .style("font-size", "20px") // Set the font size
-      .style("font-weight", "bold") // Make the title bold
       .text("Total Bill vs Tips"); // The actual title text
 
     // Add X axis
