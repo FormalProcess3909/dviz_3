@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dviz_3/static/css/main.f0f2ffe7.css",
+    "main.js": "/dviz_3/static/js/main.89769b08.js",
+    "static/media/tips.csv": "/dviz_3/static/media/tips.8e44a6435d7436bcf763.csv",
+    "index.html": "/dviz_3/index.html",
+    "main.f0f2ffe7.css.map": "/dviz_3/static/css/main.f0f2ffe7.css.map",
+    "main.89769b08.js.map": "/dviz_3/static/js/main.89769b08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0f2ffe7.css",
+    "static/js/main.89769b08.js"
+  ]
+}
